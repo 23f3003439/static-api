@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "email": "23f3003439@ds.study.iitm.ac.in",
+    "version": "5f679e3f"
+  },
+  "products": [
+    {
+      "id": "prod-5f679e3f-001",
+      "name": "Pro Item 1",
+      "category": "home",
+      "price": 280.04,
+      "stock": 62,
+      "rating": 3.4
+    },
+    {
+      "id": "prod-5f679e3f-002",
+      "name": "Elite Item 2",
+      "category": "books",
+      "price": 86.96,
+      "stock": 154,
+      "rating": 3.5
+    },
+    {
+      "id": "prod-5f679e3f-003",
+      "name": "Pro Item 3",
+      "category": "books",
+      "price": 257.38,
+      "stock": 198,
+      "rating": 2.2
+    },
+    {
+      "id": "prod-5f679e3f-004",
+      "name": "Basic Item 4",
+      "category": "clothing",
+      "price": 315.29,
+      "stock": 116,
+      "rating": 2.2
+    },
+    {
+      "id": "prod-5f679e3f-005",
+      "name": "Standard Item 5",
+      "category": "clothing",
+      "price": 413.51,
+      "stock": 161,
+      "rating": 1.4
+    },
+    {
+      "id": "prod-5f679e3f-006",
+      "name": "Premium Item 6",
+      "category": "clothing",
+      "price": 418.91,
+      "stock": 143,
+      "rating": 1.2
+    },
+    {
+      "id": "prod-5f679e3f-007",
+      "name": "Basic Item 7",
+      "category": "clothing",
+      "price": 323.18,
+      "stock": 42,
+      "rating": 3.4
+    },
+    {
+      "id": "prod-5f679e3f-008",
+      "name": "Elite Item 8",
+      "category": "clothing",
+      "price": 60.64,
+      "stock": 180,
+      "rating": 4.5
+    },
+    {
+      "id": "prod-5f679e3f-009",
+      "name": "Standard Item 9",
+      "category": "clothing",
+      "price": 145.87,
+      "stock": 119,
+      "rating": 2.5
+    },
+    {
+      "id": "prod-5f679e3f-010",
+      "name": "Elite Item 10",
+      "category": "clothing",
+      "price": 462.69,
+      "stock": 187,
+      "rating": 3.4
+    },
+    {
+      "id": "prod-5f679e3f-011",
+      "name": "Standard Item 11",
+      "category": "home",
+      "price": 113.83,
+      "stock": 177,
+      "rating": 2.6
+    },
+    {
+      "id": "prod-5f679e3f-012",
+      "name": "Pro Item 12",
+      "category": "books",
+      "price": 263.13,
+      "stock": 31,
+      "rating": 3.8
+    },
+    {
+      "id": "prod-5f679e3f-013",
+      "name": "Standard Item 13",
+      "category": "clothing",
+      "price": 442.8,
+      "stock": 148,
+      "rating": 3.3
+    },
+    {
+      "id": "prod-5f679e3f-014",
+      "name": "Standard Item 14",
+      "category": "electronics",
+      "price": 331.9,
+      "stock": 95,
+      "rating": 4.2
+    },
+    {
+      "id": "prod-5f679e3f-015",
+      "name": "Pro Item 15",
+      "category": "sports",
+      "price": 182.84,
+      "stock": 77,
+      "rating": 2.6
+    },
+    {
+      "id": "prod-5f679e3f-016",
+      "name": "Basic Item 16",
+      "category": "sports",
+      "price": 283.56,
+      "stock": 29,
+      "rating": 3.7
+    },
+    {
+      "id": "prod-5f679e3f-017",
+      "name": "Pro Item 17",
+      "category": "home",
+      "price": 191.83,
+      "stock": 159,
+      "rating": 4.7
+    },
+    {
+      "id": "prod-5f679e3f-018",
+      "name": "Basic Item 18",
+      "category": "electronics",
+      "price": 112.2,
+      "stock": 133,
+      "rating": 3.7
+    },
+    {
+      "id": "prod-5f679e3f-019",
+      "name": "Premium Item 19",
+      "category": "sports",
+      "price": 408.78,
+      "stock": 137,
+      "rating": 4.7
+    },
+    {
+      "id": "prod-5f679e3f-020",
+      "name": "Premium Item 20",
+      "category": "home",
+      "price": 359.98,
+      "stock": 196,
+      "rating": 1.8
+    }
+  ],
+  "aggregations": {
+    "home": {
+      "count": 4,
+      "inventoryValue": 138567.44
+    }
+  }
+}
+```
+
+4. Scroll down and click **"Commit changes"** (the green button)
+
+> **How was `inventoryValue` calculated?**
+> It's the sum of `price × stock` for all 4 home products:
+> - (280.04 × 62) + (113.83 × 177) + (191.83 × 159) + (359.98 × 196)
+> - = 17362.48 + 20147.91 + 30500.97 + 70556.08 = **138567.44** ✓
+
+---
+
+### Step 4: Enable GitHub Pages
+
+1. Click the **"Settings"** tab at the top of your repository
+2. In the left sidebar, click **"Pages"**
+3. Under **"Source"**, select **"Deploy from a branch"**
+4. Under **"Branch"**, choose **`main`** and leave the folder as `/ (root)`
+5. Click **"Save"**
+
+GitHub will now say something like: *"Your site is live at `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`"*
+
+Wait about **1–2 minutes** for it to deploy.
+
+---
+
+### Step 5: Get Your JSON URL
+
+Your file will be live at:
+```
+https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/products.json
+```
+
+For example, if your GitHub username is `johnsmith` and your repo is `static-api`:
+```
+https://johnsmith.github.io/static-api/products.json
